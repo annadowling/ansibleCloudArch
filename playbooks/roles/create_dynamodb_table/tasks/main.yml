@@ -1,0 +1,14 @@
+# Create dynamo table with hash and range primary key
+---
+- name: Delete Application Load Balancer
+  dynamodb_table:
+    region: "{{ region }}"
+    name: "{{ dynamodb_table_name }}"
+    hash_key_name: id
+    hash_key_type: STRING
+    read_capacity: 2
+    write_capacity: 2
+    tags:
+      tag_name: "{{ dynamodb_tag_name }}"
+    aws_access_key: "{{ access_key_id }}"
+    aws_secret_key: "{{ secret_access_key }}"
