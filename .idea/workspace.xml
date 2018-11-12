@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4794a68-c74c-4f5f-84d8-b2c958272f58" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/playbooks/roles/create_lambda_function/tasks/main.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serverless-web-files/get-s3-storage-prices.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serverless-web-files/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serverless-web-files/update-s3-storage-prices.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/21a2ca3a489146bae5672fb159218fdfac63691f" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/55fe04e8a1ec21a2cabf9d2e8b3b5a24bbfc40c3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1cd7fd7c930bcc8ee151f86c0c6763667bfa71f" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/files/my_lambda_function_stack.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/includes/build_zip.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/includes/copy_to_s3.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/includes/init_workspace.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/playbooks/createDynamodbTable.retry" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/playbooks/createDynamodbTable.yml" afterPath="$PROJECT_DIR$/playbooks/createDynamodbTable.yml" />
-      <change beforePath="$PROJECT_DIR$/playbooks/playbook.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/playbooks/roles/__init__.py" afterPath="$PROJECT_DIR$/playbooks/createLambdaFunction.yml" />
-      <change beforePath="$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml" afterPath="$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml" />
-      <change beforePath="$PROJECT_DIR$/playbooks/roles/my_lambda_function/main.py" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,12 +17,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/playbooks/roles/create_lambda_function/tasks/main.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="35" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="15">
+                <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -443,16 +436,15 @@
       <workItem from="1541802304896" duration="687000" />
       <workItem from="1541952235782" duration="2274000" />
       <workItem from="1542015273472" duration="113000" />
-      <workItem from="1542027760327" duration="2710000" />
+      <workItem from="1542027760327" duration="2907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6308000" />
+    <option name="totallyTimeSpent" value="6505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="23" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -583,17 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="15">
-            <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inventory/hosts.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -607,7 +588,7 @@
         <state relative-caret-position="765">
           <caret line="51" column="7" lean-forward="false" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
           <folding>
-            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <marker date="1542029809504" expanded="true" signature="1941:2212" ph="..." />
           </folding>
         </state>
@@ -666,6 +647,17 @@
         <state relative-caret-position="135">
           <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
