@@ -1,4 +1,4 @@
-# Create the DynamoDB Table for used with this Serverless Architecture
+# Create the DynamoDB Table for use with this Serverless Architecture
 # ansible-playbook createDynamodbTable.yml --ask-vault-pass
 
 - name: Create the DynamoDB Table

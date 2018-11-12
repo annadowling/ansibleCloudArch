@@ -1,0 +1,12 @@
+# Create the Lambda Function for use with this Serverless Architecture
+# ansible-playbook createLambdaFunction.yml --ask-vault-pass
+
+- name: Create the Lambda Function
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  vars_files:
+    - ../group_vars/aws/vault.yml
+    - ../group_vars/aws/vars.yml
+  roles:
+    - role: create_lambda_function

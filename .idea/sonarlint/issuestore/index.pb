@@ -7,12 +7,12 @@ C
 inventory/hosts.yml,4/d/4d53160ec9da4a15b6b7dcae3c338b4e8164634b
 G
 group_vars/aws/vars.yml,2/e/2e101ee2341b5c475ff48c1b856a411b02a39daa
-F
-playbooks/playbook.yml,2/1/21a2ca3a489146bae5672fb159218fdfac63691f
-Z
-*playbooks/roles/my_lambda_function/main.py,5/5/55fe04e8a1ec21a2cabf9d2e8b3b5a24bbfc40c3
-R
-"files/my_lambda_function_stack.yml,c/1/c1cd7fd7c930bcc8ee151f86c0c6763667bfa71f
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+K
+group_vars/aws/varsBack.yml,d/0/d0115ca23a47accf5f1d3eace1d5abccf8e40cb7
+d
+4playbooks/roles/create_dynamodb_table/tasks/main.yml,2/4/24575eeb226cf6017937e0fb998e7db5b1ce5338
+Q
+!playbooks/createDynamodbTable.yml,4/e/4e75105725eac3f6848fd3e92868b49c7dbba82f

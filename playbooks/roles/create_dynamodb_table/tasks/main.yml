@@ -1,6 +1,6 @@
 # Create dynamo table with hash and range primary key
 ---
-- name: Delete Application Load Balancer
+- name: Create DynamoDB Table
   dynamodb_table:
     region: "{{ region }}"
     name: "{{ dynamodb_table_name }}"

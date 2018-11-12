@@ -1,0 +1,26 @@
+# Create Lambda functions
+---
+- name: Create Lamda Function
+  lambda:
+    aws_access_key: "{{ access_key_id }}"
+    aws_secret_key: "{{ secret_access_key }}"
+    region: "{{ region }}"
+    name: '{{ update_lambda_name }}'
+    state: present
+    zip_file: '{{ zip_file_location }}'
+    runtime: 'python2.7'
+    handler: 'hello_python.my_handler'
+    environment_variables: '{{ item.env_vars }}'
+    tags:
+      key1: '{{ lambda_tag }}'
+  with_items:
+    - name: HelloWorld
+      zip_file: hello-code.zip
+      env_vars:
+        key1: "first"
+        key2: "second"
+    - name: ByeBye
+      zip_file: bye-code.zip
+      env_vars:
+        key1: "1"
+        key2: "2"
