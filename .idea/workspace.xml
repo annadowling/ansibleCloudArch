@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4794a68-c74c-4f5f-84d8-b2c958272f58" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/playbooks/roles/create_lambda_function/tasks/main.yml" afterPath="$PROJECT_DIR$/playbooks/roles/create_lambda_function/tasks/main.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,44 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/playbooks/roles/create_lambda_function/tasks/main.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="15">
-                <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="vars.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/group_vars/aws/vars.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/playbooks/roles/create_lambda_function/tasks/main.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -140,15 +117,15 @@
         <option value="$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/main.yml" />
         <option value="$PROJECT_DIR$/group_vars/aws/varsBack.yml" />
         <option value="$PROJECT_DIR$/inventory/hosts.yml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml" />
         <option value="$PROJECT_DIR$/serverless-web-files/get-s3-storage-prices.js" />
         <option value="$PROJECT_DIR$/serverless-web-files/update-s3-storage-prices.js" />
         <option value="$PROJECT_DIR$/serverless-web-files/index.html" />
         <option value="$PROJECT_DIR$/playbooks/createDynamodbTable.yml" />
         <option value="$PROJECT_DIR$/playbooks/createLambdaFunction.yml" />
-        <option value="$PROJECT_DIR$/playbooks/roles/create_lambda_function/tasks/main.yml" />
         <option value="$PROJECT_DIR$/group_vars/aws/vars.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/playbooks/roles/create_lambda_function/tasks/main.yml" />
       </list>
     </option>
   </component>
@@ -436,15 +413,16 @@
       <workItem from="1541802304896" duration="687000" />
       <workItem from="1541952235782" duration="2274000" />
       <workItem from="1542015273472" duration="113000" />
-      <workItem from="1542027760327" duration="2907000" />
+      <workItem from="1542027760327" duration="3231000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6505000" />
+    <option name="totallyTimeSpent" value="6829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="23" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -567,14 +545,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/playbooks/playbook.yml" />
-    <entry file="file://$PROJECT_DIR$/group_vars/aws/varsBack.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="109" column="23" lean-forward="false" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inventory/hosts.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -629,7 +599,26 @@
     <entry file="file://$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="26" />
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="285">
+            <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group_vars/aws/varsBack.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="109" column="23" lean-forward="false" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -644,20 +633,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/playbooks/roles/create_lambda_function/tasks/main.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="35" />
+        <state relative-caret-position="300">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="15">
-            <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>

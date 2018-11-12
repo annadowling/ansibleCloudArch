@@ -1,18 +1,18 @@
 # Create Lambda functions
 ---
-- name: Create Lamda Function
+- name: Create Lamda Function Loop
   lambda:
+    name: '{{ item.name }}'
     aws_access_key: "{{ access_key_id }}"
     aws_secret_key: "{{ secret_access_key }}"
     region: "{{ region }}"
-    name: '{{ update_lambda_name }}'
     state: present
-    zip_file: '{{ zip_file_location }}'
+    zip_file: '{{ item.zip_file }}'
     runtime: 'python2.7'
     handler: 'hello_python.my_handler'
     environment_variables: '{{ item.env_vars }}'
     tags:
-      key1: '{{ lambda_tag }}'
+      key1: 'value1'
   with_items:
     - name: HelloWorld
       zip_file: hello-code.zip
