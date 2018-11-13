@@ -1,0 +1,12 @@
+# Create the s3 bucket and upload a html file for use with this Serverless Architecture
+# ansible-playbook creates3Bucket.yml --ask-vault-pass
+
+- name: Create the S3 Bucket and Upload html file
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  vars_files:
+    - ../group_vars/aws/vault.yml
+    - ../group_vars/aws/vars.yml
+  roles:
+    - role: create_s3_bucket
