@@ -1,0 +1,12 @@
+# Create and Subscribe to an SNS topic for Lambda Update event triggers for use with this Serverless Architecture
+# ansible-playbook createSNSTopic.yml --ask-vault-pass
+
+- name: Create and Subscribe to an SNS topic for Lambda Update event triggers
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  vars_files:
+    - ../group_vars/aws/vault.yml
+    - ../group_vars/aws/vars.yml
+  roles:
+    - role: create_sns_topic

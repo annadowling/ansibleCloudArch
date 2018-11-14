@@ -1,0 +1,25 @@
+# Creates and subscribes to an SNS topic for lambda event triggers
+---
+- name: Create Lambda SNS topic
+  sns_topic:
+    region: "{{ region }}"
+    aws_access_key: "{{ access_key_id }}"
+    aws_secret_key: "{{ secret_access_key }}"
+    name: "{{ sns_topic_name }}"
+    state: present
+    display_name: "{{ sns_topic_name }}"
+    delivery_policy:
+      http:
+        defaultHealthyRetryPolicy:
+            minDelayTarget: 2
+            maxDelayTarget: 4
+            numRetries: 3
+            numMaxDelayRetries: 5
+            backoffFunction: "arithmetic"
+        disableSubscriptionOverrides: True
+        defaultThrottlePolicy:
+            maxReceivesPerSecond: 10
+    policy: ''
+    subscriptions:
+      - endpoint: "arn:aws:lambda:ap-southeast-2:123456789:function:functionName"
+        protocol: "lambda"
