@@ -28,3 +28,7 @@ L
 serverless-web-files/key.txt,0/6/06ec8783d8736b8e4197fb2c79519dcf7d851cb9
 _
 /playbooks/roles/create_s3_bucket/tasks/main.yml,7/8/78494d2231e7c627fd77d02ce93df5efe6b261ce
+L
+playbooks/createSNSTopic.yml,6/8/683ea7717ef0c812a006936effbeb76841e3a72f
+_
+/playbooks/roles/create_sns_topic/tasks/main.yml,2/c/2c87866abf2284e66aa5ecb169af011ac31ba398

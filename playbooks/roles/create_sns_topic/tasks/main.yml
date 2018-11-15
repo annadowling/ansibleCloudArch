@@ -5,7 +5,7 @@
     region: "{{ region }}"
     aws_access_key: "{{ access_key_id }}"
     aws_secret_key: "{{ secret_access_key }}"
-    name: "{{ sns_topic_name }}"
+    name: "{{ price_change_sns_topic_arn }}"
     state: present
     display_name: "{{ sns_topic_name }}"
     delivery_policy:
@@ -19,7 +19,6 @@
         disableSubscriptionOverrides: True
         defaultThrottlePolicy:
             maxReceivesPerSecond: 10
-    policy: ''
     subscriptions:
-      - endpoint: "arn:aws:lambda:ap-southeast-2:123456789:function:functionName"
+      - endpoint: "update-s3-storage-prices lambda function arn TO BE QUERIED FOR AND FILLED IN HERE"
         protocol: "lambda"
