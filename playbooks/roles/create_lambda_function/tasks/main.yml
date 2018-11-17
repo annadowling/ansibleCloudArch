@@ -8,19 +8,9 @@
     region: "{{ region }}"
     state: present
     zip_file: '{{ item.zip_file }}'
-    runtime: 'python2.7'
-    handler: 'hello_python.my_handler'
-    environment_variables: '{{ item.env_vars }}'
-    tags:
-      key1: 'value1'
+    runtime: 'nodejs6.10'
   with_items:
-    - name: HelloWorld
-      zip_file: hello-code.zip
-      env_vars:
-        key1: "first"
-        key2: "second"
-    - name: ByeBye
-      zip_file: bye-code.zip
-      env_vars:
-        key1: "1"
-        key2: "2"
+    - name: '{{ update_lambda_function }}'
+      zip_file: '{{ zip_file_update }}'
+    - name: '{{ update_lambda_function }}'
+      zip_file: '{{ zip_file_get }}'
