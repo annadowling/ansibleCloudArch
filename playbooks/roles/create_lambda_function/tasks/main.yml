@@ -9,6 +9,8 @@
     state: present
     zip_file: '{{ item.zip_file }}'
     runtime: 'nodejs6.10'
+    handler: 'None'
+    role: ''
   with_items:
     - name: '{{ update_lambda_function }}'
       zip_file: '{{ zip_file_update }}'
