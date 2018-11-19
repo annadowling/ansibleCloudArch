@@ -1,0 +1,14 @@
+# Execute Lambda functions
+---
+- name: Execute Lamda Function
+  execute_lambda:
+    region: "{{ region }}"
+    aws_access_key: "{{ access_key_id }}"
+    aws_secret_key: "{{ secret_access_key }}"
+    name: '{{ get_lambda_function }}'
+    wait: true
+    tail_log: true
+    version_qualifier: LATEST
+  register: response
+  # the response will have a `logs` key that will contain a log (up to 4KB) of the function execution in Lambda.
+
