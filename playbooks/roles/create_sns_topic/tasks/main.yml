@@ -9,11 +9,6 @@
     function_name: '{{ update_lambda_function }}'
   register: lambda_facts.function
 
-- name: "Print Function Results"
-  debug:
-    msg: "ARN: {{ item }}"
-  with_items: "{{ lambda_facts.function }}"
-
 - name: Create Lambda SNS topic
   sns_topic:
     region: "{{ region }}"
@@ -34,5 +29,6 @@
         defaultThrottlePolicy:
             maxReceivesPerSecond: 10
     subscriptions:
-      - endpoint: "{{ update_lambda_function.arn }}" # CHECK THIS FOR WHAT IS RETRIEVED
+      - endpoint: "{{ item }}"
         protocol: "lambda"
+  with_items: "{{ lambda_facts.function['update-s3-storage-prices'].function_arn }}"
