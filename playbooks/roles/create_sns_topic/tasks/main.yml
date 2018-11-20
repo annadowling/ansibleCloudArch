@@ -9,12 +9,16 @@
     function_name: '{{ update_lambda_function }}'
   register: lambda_facts.function
 
-- name: Create Lambda SNS topic
+- name: Print output
+  debug:
+    msg: "Lambda Arn: {{ lambda_facts.function['update-s3-storage-prices'].function_arn }}"
+
+- name: Create Lambda SNS Topic
   sns_topic:
     region: "{{ region }}"
     aws_access_key: "{{ access_key_id }}"
     aws_secret_key: "{{ secret_access_key }}"
-    name: "{{ price_change_sns_topic_arn }}"
+    name: "test"
     state: present
     display_name: "{{ sns_topic_name }}"
     delivery_policy:
@@ -22,13 +26,12 @@
         defaultHealthyRetryPolicy:
             minDelayTarget: 2
             maxDelayTarget: 4
-            numRetries: 3
+            numRetries: 5
             numMaxDelayRetries: 5
             backoffFunction: "arithmetic"
         disableSubscriptionOverrides: True
         defaultThrottlePolicy:
             maxReceivesPerSecond: 10
     subscriptions:
-      - endpoint: "{{ item }}"
+      - endpoint: "{{ lambda_facts.function['update-s3-storage-prices'].function_arn }}"
         protocol: "lambda"
-  with_items: "{{ lambda_facts.function['update-s3-storage-prices'].function_arn }}"
