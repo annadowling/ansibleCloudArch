@@ -32,3 +32,7 @@ L
 playbooks/createSNSTopic.yml,6/8/683ea7717ef0c812a006936effbeb76841e3a72f
 _
 /playbooks/roles/create_sns_topic/tasks/main.yml,2/c/2c87866abf2284e66aa5ecb169af011ac31ba398
+S
+#playbooks/executeLambdaFunction.yml,c/c/cc318e4e151c18056f3b75cc0ab26839b1129712
+f
+6playbooks/roles/execute_lambda_function/tasks/main.yml,8/3/83e7fda90db633c43daea71c75af74be3ed975c0

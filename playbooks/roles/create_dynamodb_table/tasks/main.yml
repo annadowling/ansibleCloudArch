@@ -4,7 +4,7 @@
   dynamodb_table:
     region: "{{ region }}"
     name: "{{ dynamodb_table_name }}"
-    hash_key_name: id
+    hash_key_name: "{{ hash_key_name }}"
     hash_key_type: STRING
     read_capacity: 2
     write_capacity: 2
