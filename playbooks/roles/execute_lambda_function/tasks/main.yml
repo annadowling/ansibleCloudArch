@@ -5,7 +5,7 @@
     region: "{{ region }}"
     aws_access_key: "{{ access_key_id }}"
     aws_secret_key: "{{ secret_access_key }}"
-    name: '{{ get_lambda_function }}'
+    name: '{{ receive_lambda_function }}'
     wait: true
     tail_log: true
     version_qualifier: LATEST

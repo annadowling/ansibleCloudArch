@@ -9,10 +9,12 @@
     state: present
     zip_file: '{{ item.zip_file }}'
     runtime: 'nodejs6.10'
-    handler: 'None'
+    handler: '{{ item.handler }}'
     role: '{{ lambda_dynamodb_role }}'
   with_items:
-    - name: '{{ update_lambda_function }}'
-      zip_file: '{{ zip_file_update }}'
-    - name: '{{ get_lambda_function }}'
-      zip_file: '{{ zip_file_get }}'
+    - name: '{{ receive_lambda_function }}'
+      zip_file: '{{ zip_file_receive_function }}'
+      handler: '{{ received_handler }}'
+    - name: '{{ agg_lambda_function }}'
+      zip_file: '{{ zip_file_agg_function }}'
+      handler: '{{ agg_handler }}'

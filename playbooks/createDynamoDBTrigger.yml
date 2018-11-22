@@ -1,0 +1,12 @@
+# Create the DynamoDB Evenet Trigger for a Lambda Function for use with this Serverless Architecture
+# ansible-playbook createDynamoDBTrigger.yml --ask-vault-pass
+
+- name: Create the DynamoDB Event Trigger for a Lambda Function
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  vars_files:
+    - ../group_vars/aws/vault.yml
+    - ../group_vars/aws/vars.yml
+  roles:
+    - role: create_dynamodb_trigger
