@@ -1,4 +1,5 @@
 #!/usr/bin/python
+
 #
 # (c) 21/11/2018 A.Dowling
 #
@@ -12,9 +13,6 @@
 import boto3
 import sys
 
-print '1st Argument :', str(sys.argv[1])
-print '2nd Argument :', str(sys.argv[2])
-
 access_key_id = str(sys.argv[1])
 secret_access_key = str(sys.argv[2])
 
@@ -25,4 +23,4 @@ dynamodb_response = client.describe_table(
     TableName='VoteApp'
 )
 
-print(dynamodb_response)
+print(dynamodb_response['Table']['TableArn'])

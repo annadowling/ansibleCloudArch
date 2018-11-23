@@ -1,12 +1,12 @@
 # Create dynamo table with hash and range primary key
 ---
 - name: Retrieve DynamoDB Table ARN
-  script: ../../retrieveDynamoDBTableARN.py "{{ access_key_id }}" "{{ secret_access_key }}"
-  register: dynamodb_arn
+  command: python /Users/annadowling/Desktop/CloudArch/ansible-architecture/playbooks/retrieveDynamoDBTableARN.py {{ access_key_id }} {{ secret_access_key }}
+  register: dynamodb_table_arn
 
 - name: Print output
   debug:
-    msg: "DYNAMODB Arn: {{ dynamodb_arn }}"
+    msg: "DYNAMODB Arn: {{ dynamodb_table_arn }}"
 
 - name: Create DynamoDB Event Trigger for Aggregation Lambda
   lambda_event:
@@ -18,7 +18,7 @@
     function_name: "{{ agg_lambda_function }}"
     alias: "{{ agg_lambda_function }}"
     source_params:
-      source_arn: arn:aws:dynamodb:eu-west-1:531474609755:table/VoteApp/stream/2018-11-22T20:24:48.498
+      source_arn: "{{ dynamodb_table_arn }}"
       enabled: True
       batch_size: 100
       starting_position: LATEST
