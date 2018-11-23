@@ -2,103 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4794a68-c74c-4f5f-84d8-b2c958272f58" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/3/83e7fda90db633c43daea71c75af74be3ed975c0" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/cc318e4e151c18056f3b75cc0ab26839b1129712" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/apply.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/css/bootstrap.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/css/font.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/css/index.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/css/main.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/css/mapbox-gl.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/css/message.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/css/normalize.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/css/ride.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/faq.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/fonts/fairplex-wide-n4.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/fonts/fairplex-wide-n7.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/fonts/glyphicons-halflings-regular.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/fonts/glyphicons-halflings-regular.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/fonts/glyphicons-halflings-regular.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/fonts/glyphicons-halflings-regular.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/fonts/glyphicons-halflings-regular.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/background.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/bbd3207c.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/bucephalus.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/loading.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/rocinante.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/shadowfox.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/spinning-gears.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/star-pattern.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/unicorn-icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/unicorn-logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/unicorn-map-bg.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/unicorn-silhouette.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-apply-header.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-faq-header.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-W.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-Xiaomi.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-about.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-apple.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-blackberry.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-block-1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-block-2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-block-3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-block-4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-facebook.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-google.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-instagram.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-kraken.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-quote.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-quote.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-top.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-twitter.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-wechat.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-home-weibo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-investors-1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-investors-2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-investors-3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-investors-4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-investors-5.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-investors-awesome.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-investors-header.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-investors-pcp.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-investors-thebarn.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-logo-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-logo-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-unicorn-header.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-unicorn-one.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-unicorn-three.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/images/wr-unicorn-two.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/investors.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/js/cognito-auth.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/js/config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/js/esri-map.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/js/main.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/js/ride.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/js/vendor.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/js/vendor/amazon-cognito-identity.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/js/vendor/aws-cognito-sdk.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/js/vendor/bootstrap.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/js/vendor/html5shiv.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/js/vendor/jquery-3.1.0.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/js/vendor/modernizr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/js/vendor/moment.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/js/vendor/respond.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/js/vendor/unicorn-icon" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/register.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/ride.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/robots.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/signin.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/unicorns.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static-webapp/website/verify.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/6/06ec8783d8736b8e4197fb2c79519dcf7d851cb9" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/63d17b933cf3cafdb9f38bcab4372566e44a1df0" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/8929c0d01aaed6458584685c22a79d8bbd8722f2" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml" afterPath="$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml" />
-      <change beforePath="$PROJECT_DIR$/playbooks/roles/create_s3_bucket/tasks/main.yml" afterPath="$PROJECT_DIR$/playbooks/roles/create_s3_bucket/tasks/main.yml" />
+      <change beforePath="$PROJECT_DIR$/static-web-app/refresh.js" afterPath="$PROJECT_DIR$/static-web-app/refresh.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -112,55 +21,14 @@
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="createSNSTopic.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/playbooks/createSNSTopic.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/playbooks/roles/create_s3_bucket/tasks/main.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vars.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group_vars/aws/vars.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -170,8 +38,22 @@
       <find>vault_api_access_key_id</find>
       <find>permission</find>
       <find>price_change_sns_topic_arn</find>
+      <find>key.txt</find>
+      <find>username</find>
+      <find>has</find>
+      <find>key_file_dir</find>
+      <find>access</find>
+      <find>region</find>
+      <find>refresh</find>
+      <find>cloudwatch</find>
+      <find>cloud</find>
+      <find>register</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
     <dirStrings>
+      <dir>$PROJECT_DIR$/static-webapp/website</dir>
       <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
@@ -245,14 +127,20 @@
         <option value="$PROJECT_DIR$/playbooks/create_sns_topic/tasks/main.yml" />
         <option value="$PROJECT_DIR$/playbooks/createSNSTopic.yml" />
         <option value="$PROJECT_DIR$/serverless-web-files/index.html" />
-        <option value="$PROJECT_DIR$/playbooks/roles/create_lambda_function/tasks/main.yml" />
-        <option value="$PROJECT_DIR$/playbooks/roles/execute_lambda_function/tasks/main.yml" />
         <option value="$PROJECT_DIR$/playbooks/executeLambdaFunction.yml" />
         <option value="$PROJECT_DIR$/playbooks/backup.yml" />
         <option value="$PROJECT_DIR$/playbooks/roles/create_sns_topic/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/lambda_fucntions/requestUnicorn.js" />
         <option value="$PROJECT_DIR$/playbooks/roles/create_s3_bucket/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/lambda_functions/receive-vote/app.js" />
+        <option value="$PROJECT_DIR$/static-web-app/refresh.js" />
+        <option value="$PROJECT_DIR$/playbooks/roles/execute_lambda_function/tasks/main.yml" />
         <option value="$PROJECT_DIR$/group_vars/aws/vars.yml" />
+        <option value="$PROJECT_DIR$/playbooks/createDynamoDBTrigger.yml" />
+        <option value="$PROJECT_DIR$/playbooks/roles/create_lambda_function/tasks/main.yml" />
         <option value="$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/playbooks/retrieveDynamoDBTableARN.py" />
+        <option value="$PROJECT_DIR$/playbooks/roles/create_dynamodb_trigger/tasks/main.yml" />
       </list>
     </option>
   </component>
@@ -263,9 +151,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="x" value="1943" />
+    <option name="y" value="97" />
+    <option name="width" value="1897" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -332,7 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -341,48 +229,12 @@
               <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
               <item name="ansible-architecture" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ansible-architecture" type="462c0819:PsiDirectoryNode" />
-              <item name="group_vars" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ansible-architecture" type="462c0819:PsiDirectoryNode" />
-              <item name="group_vars" type="462c0819:PsiDirectoryNode" />
-              <item name="aws" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ansible-architecture" type="462c0819:PsiDirectoryNode" />
-              <item name="playbooks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ansible-architecture" type="462c0819:PsiDirectoryNode" />
-              <item name="playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ansible-architecture" type="462c0819:PsiDirectoryNode" />
-              <item name="playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="create_dynamodb_table" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ansible-architecture" type="462c0819:PsiDirectoryNode" />
-              <item name="playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="create_dynamodb_table" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -399,15 +251,17 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/playbooks/roles" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/playbooks" />
       <recent name="$PROJECT_DIR$/group_vars/aws" />
       <recent name="$PROJECT_DIR$/inventory" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lambda_functions" />
       <recent name="$PROJECT_DIR$/static-webapp" />
+      <recent name="$PROJECT_DIR$/static-webapp/website" />
       <recent name="$PROJECT_DIR$/playbooks/roles" />
       <recent name="$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks" />
-      <recent name="$PROJECT_DIR$/playbooks" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -532,16 +386,21 @@
       <workItem from="1542719438405" duration="2010000" />
       <workItem from="1542801557410" duration="92000" />
       <workItem from="1542805072061" duration="3000" />
-      <workItem from="1542805948894" duration="2483000" />
+      <workItem from="1542805948894" duration="3241000" />
+      <workItem from="1542810482202" duration="749000" />
+      <workItem from="1542817624510" duration="141000" />
+      <workItem from="1542838340950" duration="2310000" />
+      <workItem from="1542900235283" duration="845000" />
+      <workItem from="1542913034898" duration="7350000" />
+      <workItem from="1542989674327" duration="852000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25503000" />
+    <option name="totallyTimeSpent" value="38508000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
+    <frame x="1920" y="97" width="1920" height="1057" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -567,9 +426,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16996047" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21618743" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28683835" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14483494" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -632,143 +491,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/serverless-web-files/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="88" lean-forward="false" selection-start-line="27" selection-start-column="88" selection-end-line="27" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/roles/create_lambda_function/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/createLambdaFunction.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="60" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group_vars/aws/vars.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serverless-web-files/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="88" lean-forward="false" selection-start-line="27" selection-start-column="88" selection-end-line="27" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/roles/create_sns_topic/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group_vars/aws/vars.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serverless-web-files/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="88" lean-forward="false" selection-start-line="27" selection-start-column="88" selection-end-line="27" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/roles/create_sns_topic/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group_vars/aws/vars.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serverless-web-files/key.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/createS3Bucket.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/roles/create_s3_bucket/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group_vars/aws/vars.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="72" lean-forward="false" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serverless-web-files/key.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/createS3Bucket.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/roles/create_s3_bucket/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group_vars/aws/vars.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/playbooks/roles/create_lambda_function/tasks/main.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -780,7 +502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="59" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -788,7 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="68" lean-forward="false" selection-start-line="2" selection-start-column="68" selection-end-line="2" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -806,7 +526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,7 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="68" lean-forward="false" selection-start-line="2" selection-start-column="68" selection-end-line="2" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -824,7 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1650">
           <caret line="110" column="23" lean-forward="false" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -832,7 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -850,24 +566,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serverless-web-files/get-s3-storage-prices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serverless-web-files/update-s3-storage-prices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="108" column="2" lean-forward="false" selection-start-line="108" selection-start-column="2" selection-end-line="108" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/serverless-web-files/get-s3-storage-prices.js" />
+    <entry file="file://$PROJECT_DIR$/serverless-web-files/update-s3-storage-prices.js" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -879,65 +582,63 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/group_vars/aws/varsBack.yml" />
-    <entry file="file://$PROJECT_DIR$/serverless-web-files/key.txt">
+    <entry file="file://$PROJECT_DIR$/serverless-web-files/index.html" />
+    <entry file="file://$PROJECT_DIR$/playbooks/backup.yml" />
+    <entry file="file://$PROJECT_DIR$/playbooks/createSNSTopic.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="15" />
+        <state relative-caret-position="15">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serverless-web-files/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="88" lean-forward="false" selection-start-line="27" selection-start-column="88" selection-end-line="27" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static-webapp/website/key.txt" />
+    <entry file="file://$PROJECT_DIR$/static-webapp/website/register.html" />
+    <entry file="file://$PROJECT_DIR$/lambda_functions/requestUnicorn.js" />
+    <entry file="file://$PROJECT_DIR$/static-webapp/website/js/config.js" />
     <entry file="file://$PROJECT_DIR$/playbooks/executeLambdaFunction.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/roles/execute_lambda_function/tasks/main.yml">
+    <entry file="file://$PROJECT_DIR$/static-webapp/index.html" />
+    <entry file="file://$PROJECT_DIR$/lambda-refarch-voteapp-master/README/README-CN.md" />
+    <entry file="file://$PROJECT_DIR$/static-web-app/lambda_webapp.template">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        <state relative-caret-position="-4029">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/backup.yml" />
-    <entry file="file://$PROJECT_DIR$/playbooks/roles/create_sns_topic/tasks/main.yml">
+    <entry file="file://$PROJECT_DIR$/static-web-app/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="91" />
-          <folding />
+        <state relative-caret-position="-1805">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/roles/create_lambda_function/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/static-web-app/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-548">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/createDynamodbTable.yml">
+    <entry file="file://$PROJECT_DIR$/static-web-app/NOTICE.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="59" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/createLambdaFunction.yml">
+    <entry file="file://$PROJECT_DIR$/static-web-app/apigateway-mappingtemplate.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="60" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="60" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -945,39 +646,121 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="54" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/createSNSTopic.yml">
+    <entry file="file://$PROJECT_DIR$/lambda_functions/receive-vote/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lambda_functions/receive-vote/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playbooks/createLambdaFunction.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="54" />
-          <folding />
+          <caret line="1" column="60" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/roles/create_s3_bucket/tasks/main.yml">
+    <entry file="file://$PROJECT_DIR$/static-web-app/refresh.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="-281">
+          <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lambda_functions/aggregate-votes/aggregate-votes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lambda_functions/receive-vote/receive-vote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playbooks/roles/execute_lambda_function/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playbooks/createDynamodbTable.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="59" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playbooks/roles/create_sns_topic/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="91" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/group_vars/aws/vars.yml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playbooks/roles/create_lambda_function/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playbooks/roles/create_s3_bucket/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="13" />
-          <folding />
+          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playbooks/retrieveDynamoDBTableARN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playbooks/createDynamoDBTrigger.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="61" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="180">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playbooks/roles/create_dynamodb_trigger/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
         </state>
       </provider>
     </entry>
