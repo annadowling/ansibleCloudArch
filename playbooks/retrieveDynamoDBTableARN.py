@@ -7,7 +7,7 @@
 # boto3
 # python version 2.7.3
 #
-# Script returns ARN of Specified DynamoDB Table (Boto3 was used instead of ansible as there was no way to return this value in ansible currently)
+# Script returns ARN of Specified DynamoDB Table (Boto3 was used instead of ansible as there was no way to set or return this value in ansible currently, see github issue: https://github.com/ansible/ansible/issues/39538)
 # command to run example: python retrieveDynamoDBTableARN.py
 
 import boto3
