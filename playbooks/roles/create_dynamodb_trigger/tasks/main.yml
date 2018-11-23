@@ -2,11 +2,11 @@
 ---
 - name: Retrieve DynamoDB Table ARN
   command: python /Users/annadowling/Desktop/CloudArch/ansible-architecture/playbooks/retrieveDynamoDBTableARN.py {{ access_key_id }} {{ secret_access_key }}
-  register: dynamodb_table_arn
+  register: table_stream_arn
 
-- name: Print output
+- name: Print output of retrieved table ARN
   debug:
-    msg: "DYNAMODB Arn: {{ dynamodb_table_arn }}"
+    msg: "DYNAMODB Table Stream Arn: {{ table_stream_arn.stdout }}"
 
 - name: Create DynamoDB Event Trigger for Aggregation Lambda
   lambda_event:
@@ -15,10 +15,10 @@
     aws_secret_key: "{{ secret_access_key }}"
     state: present
     event_source: stream
-    function_name: "{{ agg_lambda_function }}"
-    alias: "{{ agg_lambda_function }}"
+    lambda_function_arn: "{{ agg_lambda_function }}"
+    alias: Dev
     source_params:
-      source_arn: "{{ dynamodb_table_arn }}"
+      source_arn: "{{ table_stream_arn.stdout }}"
       enabled: True
       batch_size: 100
       starting_position: LATEST

@@ -23,4 +23,12 @@ dynamodb_response = client.describe_table(
     TableName='VoteApp'
 )
 
-print(dynamodb_response['Table']['TableArn'])
+stream_response = client.update_table(
+    TableName='VoteApp',
+    StreamSpecification={
+        'StreamEnabled': True,
+        'StreamViewType': 'NEW_AND_OLD_IMAGES'
+    }
+)
+
+print(stream_response['TableDescription']['LatestStreamArn'])
