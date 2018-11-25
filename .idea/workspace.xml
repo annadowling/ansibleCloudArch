@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4794a68-c74c-4f5f-84d8-b2c958272f58" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3fd23d379622d8b3869fd72f400f93e0a23e1a95" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3fd23d379622d8b3869fd72f400f93e0a23e1a95" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad166e264031b10937da239ca78959cbe530546c" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad166e264031b10937da239ca78959cbe530546c" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bde26f7d8eebbaca3348e61d187e08e90cc2783c" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bde26f7d8eebbaca3348e61d187e08e90cc2783c" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/lambda_functions/aggregate-votes/aggregate-votes.js" afterPath="$PROJECT_DIR$/lambda_functions/aggregate-votes/aggregate-votes.js" />
-      <change beforePath="$PROJECT_DIR$/lambda_functions/aggregate-votes/aggregate-votes.js.zip" afterPath="$PROJECT_DIR$/lambda_functions/aggregate-votes/aggregate-votes.js.zip" />
-      <change beforePath="$PROJECT_DIR$/lambda_functions/receive-vote/receive-vote.js" afterPath="$PROJECT_DIR$/lambda_functions/receive-vote/receive-vote.js" />
-      <change beforePath="$PROJECT_DIR$/lambda_functions/receive-vote/receive-vote.js.zip" afterPath="$PROJECT_DIR$/lambda_functions/receive-vote/receive-vote.js.zip" />
+      <change beforePath="$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml" afterPath="$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,6 +18,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="aggregate-votes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lambda_functions/aggregate-votes/aggregate-votes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="46" column="30" lean-forward="false" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="receive-vote.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lambda_functions/receive-vote/receive-vote.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="refresh.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static-web-app/refresh.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -34,11 +48,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static-web-app/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
               <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-11">
+              <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vars.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group_vars/aws/vars.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -170,10 +204,10 @@
         <option value="$PROJECT_DIR$/playbooks/retrieveDynamoDBTableARN.py" />
         <option value="$PROJECT_DIR$/playbooks/createS3Bucket.yml" />
         <option value="$PROJECT_DIR$/playbooks/createLambdaFunction.yml" />
-        <option value="$PROJECT_DIR$/group_vars/aws/vars.yml" />
-        <option value="$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml" />
         <option value="$PROJECT_DIR$/lambda_functions/receive-vote/receive-vote.js" />
         <option value="$PROJECT_DIR$/lambda_functions/aggregate-votes/aggregate-votes.js" />
+        <option value="$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/group_vars/aws/vars.yml" />
       </list>
     </option>
   </component>
@@ -292,72 +326,6 @@
               <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
               <item name="ansible-architecture" type="462c0819:PsiDirectoryNode" />
               <item name="playbooks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ansible-architecture" type="462c0819:PsiDirectoryNode" />
-              <item name="playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ansible-architecture" type="462c0819:PsiDirectoryNode" />
-              <item name="playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="create_dynamodb_table" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ansible-architecture" type="462c0819:PsiDirectoryNode" />
-              <item name="playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="create_dynamodb_table" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ansible-architecture" type="462c0819:PsiDirectoryNode" />
-              <item name="playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="create_dynamodb_trigger" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ansible-architecture" type="462c0819:PsiDirectoryNode" />
-              <item name="playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="create_dynamodb_trigger" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ansible-architecture" type="462c0819:PsiDirectoryNode" />
-              <item name="playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="create_lambda_function" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ansible-architecture" type="462c0819:PsiDirectoryNode" />
-              <item name="playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="create_lambda_function" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ansible-architecture" type="462c0819:PsiDirectoryNode" />
-              <item name="playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="execute_lambda_function" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ansible-architecture" type="462c0819:PsiDirectoryNode" />
-              <item name="playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="execute_lambda_function" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ansible-architecture" type="b2602c69:ProjectViewProjectNode" />
@@ -530,12 +498,12 @@
       <workItem from="1542913034898" duration="7350000" />
       <workItem from="1542989674327" duration="6681000" />
       <workItem from="1543085515530" duration="6969000" />
-      <workItem from="1543144398912" duration="105000" />
+      <workItem from="1543144398912" duration="690000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51411000" />
+    <option name="totallyTimeSpent" value="51996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="0" />
@@ -567,7 +535,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18097281" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23676682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -825,6 +793,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -832,6 +801,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -859,14 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/group_vars/aws/vars.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/playbooks/roles/create_lambda_function/tasks/main.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -883,26 +845,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml">
+    <entry file="file://$PROJECT_DIR$/static-web-app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lambda_functions/aggregate-votes/aggregate-votes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="46" column="30" lean-forward="false" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lambda_functions/receive-vote/receive-vote.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+        <state relative-caret-position="207">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -915,10 +861,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static-web-app/index.html">
+    <entry file="file://$PROJECT_DIR$/group_vars/aws/vars.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lambda_functions/aggregate-votes/aggregate-votes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="30" lean-forward="false" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lambda_functions/receive-vote/receive-vote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
           <folding />
         </state>
       </provider>

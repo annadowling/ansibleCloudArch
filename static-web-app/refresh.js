@@ -77,13 +77,13 @@ function getData() {
 
       for (var i in data['Items']) {
         if (data['Items'][i]['VotedFor']['S'] == "RED") {
-          redCount = parseInt(data['Items'][i]['Vote']['N']);
+          redCount = parseInt(data['Items'][i]['Votes']['N']);
         }
         if (data['Items'][i]['VotedFor']['S'] == "GREEN") {
-          greenCount = parseInt(data['Items'][i]['Vote']['N']);
+          greenCount = parseInt(data['Items'][i]['Votes']['N']);
         }
         if (data['Items'][i]['VotedFor']['S'] == "BLUE") {
-          blueCount = parseInt(data['Items'][i]['Vote']['N']);
+          blueCount = parseInt(data['Items'][i]['Votes']['N']);
         }
       }
 

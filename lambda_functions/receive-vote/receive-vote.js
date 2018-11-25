@@ -17,7 +17,7 @@ exports.handler = function(event, context) {
       'TableName': tableName,
       'Key': { 'VotedFor' : { 'S': votedForHash }},
       'UpdateExpression': 'add #vote :x',
-      'ExpressionAttributeNames': {'#vote' : 'Vote'},
+      'ExpressionAttributeNames': {'#vote' : 'Votes'},
       'ExpressionAttributeValues': { ':x' : { "N" : "1" } }
     }, function(err, data) {
       if (err) {

@@ -44,7 +44,7 @@ exports.handler = function(event, context) {
 
         var params = {
             ExpressionAttributeNames: {
-                "#vote": "Vote"
+                "#vote": "Votes"
             },
             ExpressionAttributeValues: {
                 ":x": {
