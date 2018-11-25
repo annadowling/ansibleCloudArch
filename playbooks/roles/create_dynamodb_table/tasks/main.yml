@@ -17,8 +17,6 @@
   with_items:
     - table_name: "{{ vote_table }}"
       tag: "{{ vote_tag }}"
-    - table_name: "{{ vote_agg_table }}"
-      tag: "{{ vote_agg_tag }}"
 
 - name: Create DynamoDB VoteAppAggregates Table
   dynamodb_table:
