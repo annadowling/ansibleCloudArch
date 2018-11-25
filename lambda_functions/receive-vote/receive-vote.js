@@ -1,9 +1,8 @@
 console.log('Loading event');
 var AWS = require('aws-sdk');
-var dynamodb = new AWS.DynamoDB();
 
 exports.handler = function(event, context) {
-  var twilio = require('twilio');
+  //var twilio = require('twilio');
   var dynamodb = new AWS.DynamoDB({apiVersion: '2012-08-10', region: 'eu-west-1'});
 
   /* Make sure we have a valid vote (one of [RED, GREEN, BLUE]) */
@@ -18,16 +17,16 @@ exports.handler = function(event, context) {
       'TableName': tableName,
       'Key': { 'VotedFor' : { 'S': votedForHash }},
       'UpdateExpression': 'add #vote :x',
-      'ExpressionAttributeNames': {'#vote' : 'Votes'},
+      'ExpressionAttributeNames': {'#vote' : 'Vote'},
       'ExpressionAttributeValues': { ':x' : { "N" : "1" } }
     }, function(err, data) {
       if (err) {
         console.log(err);
         context.fail(err);
       } else {
-        var resp = new twilio.TwimlResponse();
-        resp.message("Thank you for casting a vote for " + votedFor);
-        context.done(null, [resp.toString()]);
+        //var resp = new twilio.TwimlResponse();
+        //resp.message("Thank you for casting a vote for " + votedFor);
+        context.done(null, "Thank you for casting a vote for " + votedFor);
         console.log("Vote received for %s", votedFor);
       }
     });

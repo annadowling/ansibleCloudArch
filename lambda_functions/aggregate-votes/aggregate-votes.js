@@ -36,19 +36,32 @@ exports.handler = function(event, context) {
     if (totalBlue > 0) updateAggregateForColor("BLUE", totalBlue);
     if (totalGreen > 0) updateAggregateForColor("GREEN", totalGreen);
 
-    console.log('Updating Aggregates Table', totalRed);
+    console.log('Updating Aggregates Table');
 
     function updateAggregateForColor(votedFor, numVotes) {
         console.log("Updating Aggregate Color ", votedFor);
         console.log("For NumVotes: ", numVotes);
 
-        dynamodb.updateItem({
-            'TableName': aggregatesTable,
-            'Key': { 'VotedFor' : { 'S': votedFor }},
-            'UpdateExpression': 'add #vote :x',
-            'ExpressionAttributeNames': {'#vote' : 'Vote'},
-            'ExpressionAttributeValues': { ':x' : { "N" : numVotes.toString() } }
-        }, function(err, data) {
+        var params = {
+            ExpressionAttributeNames: {
+                "#vote": "Vote"
+            },
+            ExpressionAttributeValues: {
+                ":x": {
+                    N: numVotes.toString()
+                }
+            },
+            Key: {
+                "VotedFor": {
+                    S: votedFor
+                }
+            },
+            ReturnValues: "ALL_NEW",
+            TableName: aggregatesTable,
+            UpdateExpression: "ADD #vote :x"
+        };
+
+        dynamodb.updateItem(params, function(err, data) {
             if (err) {
                 console.log(err);
                 context.fail("Error updating Aggregates table: ", err)
