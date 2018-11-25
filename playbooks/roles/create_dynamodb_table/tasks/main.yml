@@ -1,13 +1,11 @@
 # Create dynamo table with hash and range primary key
 ---
-- name: Create DynamoDB VoteApp Table
+- name: Create DynamoDB Tables
   dynamodb_table:
     region: "{{ region }}"
     name: "{{ item.table_name }}"
     hash_key_name: "{{ hash_key_name }}"
     hash_key_type: STRING
-    range_key_name: "{{ range_key_name }}"
-    range_key_type: NUMBER
     read_capacity: 2
     write_capacity: 2
     tags:
@@ -17,19 +15,5 @@
   with_items:
     - table_name: "{{ vote_table }}"
       tag: "{{ vote_tag }}"
-
-- name: Create DynamoDB VoteAppAggregates Table
-  dynamodb_table:
-    region: "{{ region }}"
-    name: "{{ item.table_name }}"
-    hash_key_name: "{{ hash_key_name }}"
-    hash_key_type: STRING
-    read_capacity: 2
-    write_capacity: 2
-    tags:
-      tag_name: "{{ item.tag }}"
-    aws_access_key: "{{ access_key_id }}"
-    aws_secret_key: "{{ secret_access_key }}"
-  with_items:
     - table_name: "{{ vote_agg_table }}"
       tag: "{{ vote_agg_tag }}"

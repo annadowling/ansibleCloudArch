@@ -13,9 +13,9 @@ limitations under the License. */
 
 // Region and IdentityPoolId should be set to your own values
 AWS.config.region = 'eu-west-1'; // Region
-//AWS.config.credentials = new AWS.CognitoIdentityCredentials({
- //   IdentityPoolId: '<your-identity-pool-id-here>',
-//});
+AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+   IdentityPoolId: '<your-identity-pool-id-here>',
+});
 
 var dynamodb = new AWS.DynamoDB();
 var params = { TableName: 'VoteAppAggregates' };
