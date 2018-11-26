@@ -2,3 +2,4 @@
 /workspace/
 playbook.retry
 /group_vars/*
+/credentials/*

@@ -56,3 +56,9 @@ U
 %playbooks/retrieveDynamoDBTableARN.py,b/d/bde26f7d8eebbaca3348e61d187e08e90cc2783c
 f
 6playbooks/roles/create_dynamodb_trigger/tasks/main.yml,f/b/fbbb5a46bfe16e109c292aff0b9d41dea0dae348
+_
+/playbooks/roles/create_sqs_queue/tasks/main.yml,3/b/3b2fc2c20fe4e9f9899bd1f8de0aed38d94e256e
+L
+playbooks/createSQSQueue.yml,2/9/29c29e696e39c36c50c8e27c68c0e283556cdd1a
+L
+credentials/credentials.json,7/9/7961f00c6469b6b13d5cabc16c9c3a1deb9a1c18
