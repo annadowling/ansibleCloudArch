@@ -108,16 +108,13 @@ exports.handler = function (event, context) {
                 context.fail("Error updating Aggregates table: ", err)
             } else {
                 console.log("Vote received for %s", votedFor);
-
                 deleteFile();
-                retrieveTableResults();
-                recreateRefreshFile();
             }
         });
     }
 
     function deleteFile() {
-        console.log("Got into Delete file");
+        retrieveTableResults();
         var params = {
             Bucket: 'cloudarchwebappbucket',
             Key: 'refresh.js'
@@ -144,17 +141,15 @@ exports.handler = function (event, context) {
                 for (var i in data['Items']) {
                     if (data['Items'][i]['VotedFor']['S'] == "RED") {
                         redCount = parseInt(data['Items'][i]['Votes']['N']);
-                        console.log('redCount: ' + redCount);
                     }
                     if (data['Items'][i]['VotedFor']['S'] == "GREEN") {
                         greenCount = parseInt(data['Items'][i]['Votes']['N']);
-                        console.log('greenCount: ' + greenCount);
                     }
                     if (data['Items'][i]['VotedFor']['S'] == "BLUE") {
                         blueCount = parseInt(data['Items'][i]['Votes']['N']);
-                        console.log('blueCount: ' + blueCount);
                     }
                 }
+                recreateRefreshFile();
             }
         });
     }
