@@ -39,6 +39,10 @@ exports.handler = function (event, context) {
 
     console.log('Updating Aggregates Table');
 
+    var redCount = 0;
+    var greenCount = 0;
+    var blueCount = 0;
+
     jsScript = "var ctx = $(\"#graph\").get(0).getContext(\"2d\");\n" +
         "\n" +
         "/* Set the options for our chart */\n" +
@@ -106,6 +110,7 @@ exports.handler = function (event, context) {
                 console.log("Vote received for %s", votedFor);
 
                 deleteFile();
+                retrieveTableResults();
                 recreateRefreshFile();
             }
         });
@@ -128,11 +133,8 @@ exports.handler = function (event, context) {
         });
     }
 
-    function recreateRefreshFile() {
+    function retrieveTableResults() {
         var params = { TableName: 'VoteAppAggregates' };
-        var redCount = 0;
-        var greenCount = 0;
-        var blueCount = 0;
 
         dynamodb.scan(params, function(err, data) {
             if (err) {
@@ -142,23 +144,27 @@ exports.handler = function (event, context) {
                 for (var i in data['Items']) {
                     if (data['Items'][i]['VotedFor']['S'] == "RED") {
                         redCount = parseInt(data['Items'][i]['Votes']['N']);
+                        console.log('redCount: ' + redCount);
                     }
                     if (data['Items'][i]['VotedFor']['S'] == "GREEN") {
                         greenCount = parseInt(data['Items'][i]['Votes']['N']);
+                        console.log('greenCount: ' + greenCount);
                     }
                     if (data['Items'][i]['VotedFor']['S'] == "BLUE") {
                         blueCount = parseInt(data['Items'][i]['Votes']['N']);
+                        console.log('blueCount: ' + blueCount);
                     }
                 }
             }
         });
+    }
 
+    function recreateRefreshFile() {
         jsScript = jsScript.replace("redValue", redCount);
         jsScript = jsScript.replace("greenValue", greenCount);
         jsScript = jsScript.replace("bluevalue", blueCount);
 
 
-        console.log("Got into Create file");
         var buffer = Buffer.from(jsScript, 'utf8');
         var params = {
             ACL: 'public-read',
@@ -167,7 +173,6 @@ exports.handler = function (event, context) {
             Key: 'refresh.js'
         };
         s3.putObject(params, function (err, data) {
-            console.log("Got here in create");
             if (err) {
                 console.log("Check if you have sufficient permissions for S3: " + err);
                 context.done();

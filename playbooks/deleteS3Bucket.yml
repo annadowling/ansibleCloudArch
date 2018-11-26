@@ -1,0 +1,12 @@
+# Deletes the previously created S3 Bucket
+# ansible-playbook deleteS3Bucket.yml --ask-vault-pass
+
+- name: Delete Lambda Function
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  vars_files:
+    - ../group_vars/aws/vault.yml
+    - ../group_vars/aws/vars.yml
+  roles:
+    - role: delete_s3_bucket

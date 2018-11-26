@@ -1,0 +1,12 @@
+# Delete lambda functions from list provided
+---
+- name: Delete Lambda Functions
+  lambda:
+    name: '{{ item }}'
+    state: absent
+    region: "{{ region }}"
+    aws_access_key: "{{ access_key_id }}"
+    aws_secret_key: "{{ secret_access_key }}"
+  with_items:
+    - "{{ receive_lambda_function }}"
+    - "{{ agg_lambda_function }}"

@@ -1,0 +1,12 @@
+# Deletes the previously created Dynamodb Tables
+# ansible-playbook deleteLambdaFunction.yml --ask-vault-pass
+
+- name: Delete Lambda Function
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  vars_files:
+    - ../group_vars/aws/vault.yml
+    - ../group_vars/aws/vars.yml
+  roles:
+    - role: delete_lambda_function
