@@ -1,0 +1,15 @@
+# Delete All Serverless Architecture Components
+# ansible-playbook deleteAll.yml --ask-vault-pass
+
+- name: Delete All Serverless Architecture Components
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  vars_files:
+    - ../group_vars/aws/vault.yml
+    - ../group_vars/aws/vars.yml
+
+- include: deleteS3Bucket.yml
+- include: deleteDynamodbTable.yml
+- include: deleteLambdaFunction.yml
+- include: deleteSQSQueue.yml

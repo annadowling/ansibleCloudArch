@@ -1,0 +1,16 @@
+# Create All Serverless Architecture Components
+# ansible-playbook createAll.yml --ask-vault-pass
+
+- name: Create All Serverless Architecture Components
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  vars_files:
+    - ../group_vars/aws/vault.yml
+    - ../group_vars/aws/vars.yml
+
+- include: creates3Bucket.yml
+- include: createDynamodbTable.yml
+- include: createLambdaFunction.yml
+- include: createDynamoDBTrigger.yml
+- include: createSQSQueue.yml
