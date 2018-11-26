@@ -1,0 +1,9 @@
+# Delete sqs queue and event trigger for lambda
+---
+- name: Delete SQS Queue
+  sqs_queue:
+    region: "{{ region }}"
+    aws_access_key: "{{ access_key_id }}"
+    aws_secret_key: "{{ secret_access_key }}"
+    name: "{{ queue_name }}"
+    state: absent

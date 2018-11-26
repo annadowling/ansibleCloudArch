@@ -6,6 +6,7 @@
     aws_access_key: "{{ access_key_id }}"
     aws_secret_key: "{{ secret_access_key }}"
     name: "{{ queue_name }}"
+    state: present
     default_visibility_timeout: 30
     message_retention_period: 86400
     maximum_message_size: 1024
