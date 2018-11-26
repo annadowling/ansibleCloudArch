@@ -51,10 +51,6 @@ exports.handler = function (event, context) {
         "    animationEasing : 'easeOutCirc'\n" +
         "}\n" +
         "\n" +
-        "redValue =  totalRed;\n" +
-        "greenValue = totalGreen;\n" +
-        "bluevalue = totalBlue;\n" +
-        "\n" +
         "/* Set the initial data */\n" +
         "var init = [\n" +
         "    {\n" +
@@ -108,33 +104,41 @@ exports.handler = function (event, context) {
                 context.fail("Error updating Aggregates table: ", err)
             } else {
                 console.log("Vote received for %s", votedFor);
-                context.succeed("Successfully processed " + event.Records.length + " records.");
 
-                jsScript.replace("totalRed", totalRed);
-                jsScript.replace("totalGreen", totalGreen);
-                jsScript.replace("totalBlue", totalBlue);
                 deleteFile();
-                createRefreshFile();
+                recreateRefreshFile();
             }
         });
     }
 
     function deleteFile() {
+        console.log("Got into Delete file");
         var params = {
             Bucket: 'cloudarchwebappbucket',
             Key: 'refresh.js'
         };
         s3.deleteObject(params, function (err, data) {
-            if (data) {
-                console.log("File deleted successfully");
+            console.log("Got here in delete");
+            if (err) {
+                console.log("Check if you have sufficient permissions : " + err);
             }
             else {
-                console.log("Check if you have sufficient permissions : " + err);
+                console.log("File deleted successfully");
             }
         });
     }
 
-    function createRefreshFile() {
+    function recreateRefreshFile() {
+        totalRed = totalRed + 1;
+        totalGreen = totalGreen + 1;
+        totalBlue = totalBlue + 1;
+
+        jsScript = jsScript.replace("redValue", totalRed);
+        jsScript = jsScript.replace("greenValue", totalGreen);
+        jsScript = jsScript.replace("bluevalue", totalBlue);
+
+
+        console.log("Got into Create file");
         var buffer = Buffer.from(jsScript, 'utf8');
         var params = {
             ACL: 'public-read',
@@ -143,8 +147,15 @@ exports.handler = function (event, context) {
             Key: 'refresh.js'
         };
         s3.putObject(params, function (err, data) {
-            if (err) console.log(err, err.stack); // an error occurred
-            else console.log(data);           // successful response
+            console.log("Got here in create");
+            if (err) {
+                console.log("Check if you have sufficient permissions for S3: " + err);
+                context.done();
+            }
+            else {
+                console.log("File created for refresh.js successfully", data);
+                context.done();
+            }
         });
 
     }
