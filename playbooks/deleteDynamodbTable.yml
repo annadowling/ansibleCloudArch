@@ -1,0 +1,12 @@
+# Deletes the previously created Dynamodb Tables
+# ansible-playbook deleteDynamodbTable.yml --ask-vault-pass
+
+- name: Delete DynamoDB Tables
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  vars_files:
+    - ../group_vars/aws/vault.yml
+    - ../group_vars/aws/vars.yml
+  roles:
+    - role: delete_dynamodb_table

@@ -1,0 +1,12 @@
+# Delete dynamo tables from list provided
+---
+- name: Delete DynamoDB Tables
+  dynamodb_table:
+    region: "{{ region }}"
+    name: "{{ item.table_name }}"
+    state: absent
+    aws_access_key: "{{ access_key_id }}"
+    aws_secret_key: "{{ secret_access_key }}"
+  with_items:
+    - table_name: "{{ vote_table }}"
+    - table_name: "{{ vote_agg_table }}"

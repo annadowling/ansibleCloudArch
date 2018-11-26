@@ -129,13 +129,33 @@ exports.handler = function (event, context) {
     }
 
     function recreateRefreshFile() {
-        totalRed = totalRed + 1;
-        totalGreen = totalGreen + 1;
-        totalBlue = totalBlue + 1;
+        var params = { TableName: 'VoteAppAggregates' };
+        var redCount = 0;
+        var greenCount = 0;
+        var blueCount = 0;
 
-        jsScript = jsScript.replace("redValue", totalRed);
-        jsScript = jsScript.replace("greenValue", totalGreen);
-        jsScript = jsScript.replace("bluevalue", totalBlue);
+        dynamodb.scan(params, function(err, data) {
+            if (err) {
+                console.log(err);
+                return null;
+            } else {
+                for (var i in data['Items']) {
+                    if (data['Items'][i]['VotedFor']['S'] == "RED") {
+                        redCount = parseInt(data['Items'][i]['Votes']['N']);
+                    }
+                    if (data['Items'][i]['VotedFor']['S'] == "GREEN") {
+                        greenCount = parseInt(data['Items'][i]['Votes']['N']);
+                    }
+                    if (data['Items'][i]['VotedFor']['S'] == "BLUE") {
+                        blueCount = parseInt(data['Items'][i]['Votes']['N']);
+                    }
+                }
+            }
+        });
+
+        jsScript = jsScript.replace("redValue", redCount);
+        jsScript = jsScript.replace("greenValue", greenCount);
+        jsScript = jsScript.replace("bluevalue", blueCount);
 
 
         console.log("Got into Create file");
