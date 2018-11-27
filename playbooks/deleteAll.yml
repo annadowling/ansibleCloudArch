@@ -13,3 +13,4 @@
 - include: deleteDynamodbTable.yml
 - include: deleteLambdaFunction.yml
 - include: deleteSQSQueue.yml
+- include: deleteSNSTopic.yml

@@ -14,3 +14,4 @@
 - include: createLambdaFunction.yml
 - include: createDynamoDBTrigger.yml
 - include: createSQSQueue.yml
+- include: createSNSTopic.yml

@@ -21,17 +21,6 @@
     name: "{{ sns_topic_name }}"
     state: present
     display_name: "{{ sns_topic_name }}"
-    delivery_policy:
-      http:
-        defaultHealthyRetryPolicy:
-            minDelayTarget: 2
-            maxDelayTarget: 4
-            numRetries: 5
-            numMaxDelayRetries: 5
-            backoffFunction: "arithmetic"
-        disableSubscriptionOverrides: True
-        defaultThrottlePolicy:
-            maxReceivesPerSecond: 10
     subscriptions:
       - endpoint: "{{ lambda_facts.function['ReceiveVotes'].function_arn }}"
         protocol: "lambda"

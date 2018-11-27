@@ -1,0 +1,12 @@
+# Deletes the previously created SNS Topic
+# ansible-playbook deleteSNSTopic.yml --ask-vault-pass
+
+- name: Delete SNS Topic
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  vars_files:
+    - ../group_vars/aws/vault.yml
+    - ../group_vars/aws/vars.yml
+  roles:
+    - role: delete_sns_topic

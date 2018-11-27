@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4794a68-c74c-4f5f-84d8-b2c958272f58" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/playbooks/publishMessageToSNS.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/playbooks/deleteSNSTopic.yml" />
+      <change beforePath="$PROJECT_DIR$/playbooks/createAll.yml" afterPath="$PROJECT_DIR$/playbooks/createAll.yml" />
       <change beforePath="$PROJECT_DIR$/playbooks/roles/create_sns_topic/tasks/main.yml" afterPath="$PROJECT_DIR$/playbooks/roles/create_sns_topic/tasks/main.yml" />
-      <change beforePath="$PROJECT_DIR$/playbooks/sendMessageToSQSQueue.py" afterPath="$PROJECT_DIR$/playbooks/sendMessageToSQSQueue.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +34,48 @@
       <file leaf-file-name="main.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/playbooks/roles/create_sns_topic/tasks/main.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="11" />
+            <state relative-caret-position="330">
+              <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createSNSTopic.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/playbooks/createSNSTopic.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="37" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deleteSNSTopic.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/playbooks/deleteSNSTopic.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deleteS3Bucket.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/playbooks/deleteS3Bucket.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="28" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createAll.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/playbooks/createAll.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -53,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="publishMessageToSNS.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="publishMessageToSNS.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/playbooks/publishMessageToSNS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+            <state relative-caret-position="360">
+              <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
               <folding>
                 <element signature="e#300#312#0" expanded="true" />
               </folding>
@@ -181,7 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/playbooks/playbook.yml" />
         <option value="$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/main.yml" />
         <option value="$PROJECT_DIR$/group_vars/aws/varsBack.yml" />
         <option value="$PROJECT_DIR$/inventory/hosts.yml" />
@@ -224,14 +261,15 @@
         <option value="$PROJECT_DIR$/lambda_functions/aggregate-votes/aggregate-votes.js" />
         <option value="$PROJECT_DIR$/playbooks/createS3Bucket.yml" />
         <option value="$PROJECT_DIR$/playbooks/roles/delete_s3_bucket/tasks/main.yml" />
-        <option value="$PROJECT_DIR$/playbooks/createAll.yml" />
         <option value="$PROJECT_DIR$/playbooks/deleteAll.yml" />
         <option value="$PROJECT_DIR$/playbooks/roles/create_dynamodb_table/tasks/main.yml" />
         <option value="$PROJECT_DIR$/lambda_functions/receive-vote/receive-vote.js" />
         <option value="$PROJECT_DIR$/playbooks/sendMessageToSQSQueue.py" />
         <option value="$PROJECT_DIR$/group_vars/aws/vars.yml" />
-        <option value="$PROJECT_DIR$/playbooks/roles/create_sns_topic/tasks/main.yml" />
         <option value="$PROJECT_DIR$/playbooks/publishMessageToSNS.py" />
+        <option value="$PROJECT_DIR$/playbooks/roles/create_sns_topic/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/playbooks/createAll.yml" />
+        <option value="$PROJECT_DIR$/playbooks/deleteSNSTopic.yml" />
       </list>
     </option>
   </component>
@@ -554,12 +592,12 @@
       <workItem from="1543240630755" duration="15443000" />
       <workItem from="1543270086602" duration="41000" />
       <workItem from="1543315154373" duration="1495000" />
-      <workItem from="1543326623173" duration="1802000" />
+      <workItem from="1543326623173" duration="2193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80975000" />
+    <option name="totallyTimeSpent" value="81366000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="23" width="1920" height="1057" extended-state="6" />
@@ -665,7 +703,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static-webapp/website/js/config.js" />
     <entry file="file://$PROJECT_DIR$/static-webapp/index.html" />
     <entry file="file://$PROJECT_DIR$/lambda-refarch-voteapp-master/README/README-CN.md" />
     <entry file="file://$PROJECT_DIR$/static-web-app/LICENSE">
@@ -693,13 +730,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static-web-app/apigateway-mappingtemplate.txt" />
-    <entry file="file://$PROJECT_DIR$/playbooks/createSNSTopic.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -827,14 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/deleteS3Bucket.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/playbooks/deleteLambdaFunction.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -903,14 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/createAll.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="49" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/playbooks/roles/execute_lambda_function/tasks/main.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -960,21 +974,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/playbooks/publishMessageToSNS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+          <folding>
+            <element signature="e#300#312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/playbooks/roles/create_sns_topic/tasks/main.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="11" />
+        <state relative-caret-position="330">
+          <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playbooks/publishMessageToSNS.py">
+    <entry file="file://$PROJECT_DIR$/playbooks/createAll.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-          <folding>
-            <element signature="e#300#312#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playbooks/createSNSTopic.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="37" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playbooks/deleteS3Bucket.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playbooks/deleteSNSTopic.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
