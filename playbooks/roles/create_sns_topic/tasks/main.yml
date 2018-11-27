@@ -6,19 +6,19 @@
     aws_access_key: "{{ access_key_id }}"
     aws_secret_key: "{{ secret_access_key }}"
     query: all
-    function_name: '{{ update_lambda_function }}'
+    function_name: '{{ receive_lambda_function }}'
   register: lambda_facts.function
 
 - name: Print output
   debug:
-    msg: "Lambda Arn: {{ lambda_facts.function['update-s3-storage-prices'].function_arn }}"
+    msg: "Lambda Arn: {{ lambda_facts.function['ReceiveVotes'].function_arn }}"
 
 - name: Create Lambda SNS Topic
   sns_topic:
     region: "{{ region }}"
     aws_access_key: "{{ access_key_id }}"
     aws_secret_key: "{{ secret_access_key }}"
-    name: "test"
+    name: "{{ sns_topic_name }}"
     state: present
     display_name: "{{ sns_topic_name }}"
     delivery_policy:
@@ -33,5 +33,5 @@
         defaultThrottlePolicy:
             maxReceivesPerSecond: 10
     subscriptions:
-      - endpoint: "{{ lambda_facts.function['update-s3-storage-prices'].function_arn }}"
+      - endpoint: "{{ lambda_facts.function['ReceiveVotes'].function_arn }}"
         protocol: "lambda"

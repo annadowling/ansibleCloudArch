@@ -74,3 +74,5 @@ J
 static-web-app/mapping.txt,4/e/4e8d8dca8203dbd7b52c281e835d5bfe630e7309
 G
 playbooks/createAll.yml,5/2/52d86a140444f64f1c26fd666587d09ff5eac7bb
+R
+"playbooks/sendMessageToSQSQueue.py,8/6/8624f90cc128bb4d52c296656fd09c9db33a0927

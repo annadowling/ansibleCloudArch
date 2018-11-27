@@ -3,12 +3,12 @@
 #
 # (c) 27/11/2018 A.Dowling
 #
-# sendMessageToQueue.py version 1
+# publishMessageToSNS.py version 1
 # boto3
 # python version 2.7.3
 #
 # Script takes String input and sends the message to an SQS queue (no send message to sqs queue module available in ansible)
-# command to run example: python sendMessageToQueue.py
+# command to run example: python publishMessageToSNS.py
 
 import boto3
 from ansible_vault import Vault
@@ -26,24 +26,21 @@ access_key_id = list(key_data.values())[0]
 secret_access_key = list(key_data.values())[1]
 
 if vote.upper() in ("RED", "GREEN", "BLUE"):
-    client = boto3.client('sqs', region_name='eu-west-1', aws_access_key_id=access_key_id,
+    client = boto3.client('sns', region_name='eu-west-1', aws_access_key_id=access_key_id,
                           aws_secret_access_key=secret_access_key)
 
-    queue_url = client.get_queue_url(
-        QueueName='VoteQueue'
+    topics_list = client.list_topics(
     )
 
-    print(queue_url)
+    vote_topic = topics_list['ListTopicsResponse']['ListTopicsResult']['Topics'][0]['TopicArn']
 
-    sqs_response = client.send_message(
-        QueueUrl=queue_url,
-        MessageBody=vote.upper(),
-        DelaySeconds=0
+    sns_response = client.publish(
+        TopicArn=vote_topic,
+        Message=vote.upper()
     )
 
     print("Message sent")
-    print("Response is", sqs_response)
+    print("Response is", sns_response)
 
 else:
     print("Incorrect Vote Type Submitted, Please Try Again!")
-
