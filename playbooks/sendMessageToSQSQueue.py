@@ -15,15 +15,16 @@ from ansible_vault import Vault
 import sys
 
 password = raw_input("Please enter vault password for api keys: ")
-print "you entered", password
 vault = Vault(password)
 
 vote = raw_input("Please enter your vote (RED, GREEN, BLUE): ")
 print "you entered", vote
 
 key_data = vault.load(open('../group_vars/aws/vault.yml').read())
-access_key_id = list(key_data.values())[0]
-secret_access_key = list(key_data.values())[1]
+secret_access_key = list(key_data.values())[0]
+access_key_id = list(key_data.values())[1]
+print access_key_id
+print secret_access_key
 
 if vote.upper() in ("RED", "GREEN", "BLUE"):
     client = boto3.client('sqs', region_name='eu-west-1', aws_access_key_id=access_key_id,
@@ -33,10 +34,10 @@ if vote.upper() in ("RED", "GREEN", "BLUE"):
         QueueName='VoteQueue'
     )
 
-    print(queue_url)
+    print(queue_url['QueueUrl'])
 
     sqs_response = client.send_message(
-        QueueUrl=queue_url,
+        QueueUrl=queue_url['QueueUrl'],
         MessageBody=vote.upper(),
         DelaySeconds=0
     )

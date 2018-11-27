@@ -15,15 +15,16 @@ from ansible_vault import Vault
 import sys
 
 password = raw_input("Please enter vault password for api keys: ")
-print "you entered", password
 vault = Vault(password)
 
 vote = raw_input("Please enter your vote (RED, GREEN, BLUE): ")
 print "you entered", vote
 
 key_data = vault.load(open('../group_vars/aws/vault.yml').read())
-access_key_id = list(key_data.values())[0]
-secret_access_key = list(key_data.values())[1]
+secret_access_key = list(key_data.values())[0]
+access_key_id = list(key_data.values())[1]
+print access_key_id
+print secret_access_key
 
 if vote.upper() in ("RED", "GREEN", "BLUE"):
     client = boto3.client('sns', region_name='eu-west-1', aws_access_key_id=access_key_id,
@@ -31,8 +32,9 @@ if vote.upper() in ("RED", "GREEN", "BLUE"):
 
     topics_list = client.list_topics(
     )
-
-    vote_topic = topics_list['ListTopicsResponse']['ListTopicsResult']['Topics'][0]['TopicArn']
+    print("Topic is")
+    vote_topic = topics_list['Topics'][2]['TopicArn']
+    print(vote_topic)
 
     sns_response = client.publish(
         TopicArn=vote_topic,
