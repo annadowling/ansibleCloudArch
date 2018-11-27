@@ -9,7 +9,7 @@
     function_name: '{{ receive_lambda_function }}'
   register: lambda_facts.function
 
-- name: Print output
+- name: Print lambda_facts.function output
   debug:
     msg: "Lambda Arn: {{ lambda_facts.function['ReceiveVotes'].function_arn }}"
 
@@ -24,3 +24,12 @@
     subscriptions:
       - endpoint: "{{ lambda_facts.function['ReceiveVotes'].function_arn }}"
         protocol: "lambda"
+  register: sns_topic
+
+- name: Print Topic ARN output
+  debug:
+    msg: "SNS Topic ARN Details: {{ sns_topic['sns_arn'] }}"
+
+
+- name: Confirm SNS Permission for Lambda
+  command: python /Users/annadowling/Desktop/CloudArch/ansible-architecture/playbooks/addPermissionToLambda.py {{ access_key_id }} {{ secret_access_key }} {{ sns_topic['sns_arn'] }}
