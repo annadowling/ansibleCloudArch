@@ -1,5 +1,12 @@
 # ansible-architecture
+The following playbooks construct an application architecture that demonstrates how serverless functions can be used to build loosely coupled systems.
+The following AWS serverless can be created and deleted via this project using ansible:
 
+- S3 (Create an S3 bucket, sync files to bucket and creates a static web host from bucket and ability to delete full setup.)
+- Lambda (Creates functions, uploads function code, assigns aliases and ability to delete full setup.)
+- DynamoDB (Creates Tables, Sets table lambda event trigger and ability to delete full setup.)
+- SNS (Creates SNS topic, subscribes it to lambda event trigger and ability to delete full setup.)
+- SQS (Creates SQS Queue, Sets SQS lambda event trigger and ability to delete full setup.)
 
 ## Requirements
 The Following things need to be done prior to using this project:
@@ -13,9 +20,25 @@ The Following things need to be done prior to using this project:
 # Credentials
 In order to run the playbook as password is required per environment (qa, production), due to passing the api credentials for interaction with aws. Passwords can be found in PasswordSafe under AWS ANSIBLE VAULT ENVIRONMENTS.
 
-# Order of playbooks to run
+# Order of playbooks / scripts to run
 
 # Creation:
-1. createDynamodbTable.yml
-2. createLambdaFunction.yml
+1. creates3Bucket.yml
+2. createDynamodbTable.yml
+3. createLambdaFunction.yml
+4. createDynamoDBTrigger.yml
+5. createSQSQueue.yml
+6. createSNSTopic.yml
+
+# Testing:
+SQS lambda trigger - python sendMessageToQueue.py
+SNS lambda trigger - python publishMessageToSNS.py
+
+
+# Deletion:
+1. deleteS3Bucket.yml
+2. deleteDynamodbTable.yml
+3. deleteLambdaFunction.yml
+4. deleteSQSQueue.yml
+5. deleteSNSTopic.yml
 
