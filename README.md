@@ -1,4 +1,11 @@
 # ansible-architecture
+Sample Open Source AWS Application and Lambda code used to demonstrate the functionality for this assignment can be found here:
+https://github.com/aws-samples/lambda-refarch-voteapp
+
+This Serverless architecture looks at using AWS Lambda and other services listed below to build a dynamic voting application, which receives votes via SQS / SNS, 
+aggregates the totals into Amazon DynamoDB, and uses Amazon Simple Storage Service (Amazon S3)to display the results in real time via lambda event triggers.
+
+# Services
 The following playbooks construct an application architecture that demonstrates how serverless functions can be used to build loosely coupled systems.
 The following AWS serverless can be created and deleted via this project using ansible:
 
@@ -7,6 +14,8 @@ The following AWS serverless can be created and deleted via this project using a
 - DynamoDB (Creates Tables, Sets table lambda event trigger and ability to delete full setup.)
 - SNS (Creates SNS topic, subscribes it to lambda event trigger and ability to delete full setup.)
 - SQS (Creates SQS Queue, Sets SQS lambda event trigger and ability to delete full setup.)
+- SQS lambda trigger testing script
+- SNS lambda trigger testing script
 
 ## Requirements
 The Following things need to be done prior to using this project:
@@ -31,9 +40,13 @@ In order to run the playbook as password is required per environment (qa, produc
 6. createSNSTopic.yml
 
 # Testing:
-SQS lambda trigger - python sendMessageToQueue.py
-SNS lambda trigger - python publishMessageToSNS.py
+## SQS lambda trigger 
+Command to run: python sendMessageToQueue.py
+- Sends Vote message to Queue to test lambda trigger and view vote update in web application.
 
+## SNS lambda trigger
+Command to run: python publishMessageToSNS.py
+- Sends Vote message to SNS topic to test lambda trigger and view vote update in web application.
 
 # Deletion:
 1. deleteS3Bucket.yml
