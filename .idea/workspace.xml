@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4794a68-c74c-4f5f-84d8-b2c958272f58" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/playbooks/sendMessageToSQSQueue.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3fd23d379622d8b3869fd72f400f93e0a23e1a95" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3fd23d379622d8b3869fd72f400f93e0a23e1a95" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/55cb8affba3a4574f2a7963a0b8897624a1e7132" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/7961f00c6469b6b13d5cabc16c9c3a1deb9a1c18" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a52c05e0800ae92992942d3b22aed0cbb95c5369" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad166e264031b10937da239ca78959cbe530546c" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad166e264031b10937da239ca78959cbe530546c" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da08c14de7c960cfc2b9176cd715e5978fdedd54" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/edcb2ecc04f9aed0ef2561b3a29c1b20549d92cc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f866a8cf0ce90e800f83a0ce9d1466605281eee2" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f866a8cf0ce90e800f83a0ce9d1466605281eee2" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/playbooks/sendMessageToSQSQueue.py" afterPath="$PROJECT_DIR$/playbooks/sendMessageToSQSQueue.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,9 +21,11 @@
       <file leaf-file-name="sendMessageToSQSQueue.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/playbooks/sendMessageToSQSQueue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="270">
+              <caret line="27" column="76" lean-forward="false" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
+              <folding>
+                <element signature="e#239#251#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,7 +34,17 @@
         <entry file="file://$PROJECT_DIR$/playbooks/retrieveDynamoDBTableARN.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="41" />
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vars.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group_vars/aws/vars.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -508,12 +511,12 @@
       <workItem from="1543227205116" duration="854000" />
       <workItem from="1543240630755" duration="15443000" />
       <workItem from="1543270086602" duration="41000" />
-      <workItem from="1543315154373" duration="825000" />
+      <workItem from="1543315154373" duration="1237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78503000" />
+    <option name="totallyTimeSpent" value="78915000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="23" width="1920" height="1057" extended-state="6" />
@@ -722,14 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/group_vars/aws/vars.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/playbooks/roles/delete_lambda_function/tasks/main.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -904,19 +899,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/group_vars/aws/vars.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/playbooks/retrieveDynamoDBTableARN.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="41" />
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/playbooks/sendMessageToSQSQueue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="270">
+          <caret line="27" column="76" lean-forward="false" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
+          <folding>
+            <element signature="e#239#251#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
