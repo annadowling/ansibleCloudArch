@@ -76,3 +76,9 @@ G
 playbooks/createAll.yml,5/2/52d86a140444f64f1c26fd666587d09ff5eac7bb
 R
 "playbooks/sendMessageToSQSQueue.py,8/6/8624f90cc128bb4d52c296656fd09c9db33a0927
+_
+/playbooks/roles/delete_sns_topic/tasks/main.yml,2/3/238408cc85649b456ef392990326957c87f2d833
+L
+playbooks/deleteSNSTopic.yml,0/4/048fa6a3cbd8a8a5a79924495c3278c922de6326
+P
+ playbooks/publishMessageToSNS.py,5/c/5c1f39a7f6aebf1941c507edb2dcf824251e0852

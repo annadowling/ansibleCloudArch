@@ -1,6 +1,7 @@
 # ansible-architecture
 Sample Open Source AWS Application and Lambda code used to demonstrate the functionality for this assignment can be found here:
 https://github.com/aws-samples/lambda-refarch-voteapp
+This code has been modified substantially to suit the use cases outlined below.
 
 This Serverless architecture looks at using AWS Lambda and other services listed below to build a dynamic voting application, which receives votes via SQS / SNS, 
 aggregates the totals into Amazon DynamoDB, and uses Amazon Simple Storage Service (Amazon S3)to display the results in real time via lambda event triggers.
