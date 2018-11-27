@@ -29,20 +29,21 @@ if vote.upper() in ("RED", "GREEN", "BLUE"):
     client = boto3.client('sqs', region_name='eu-west-1', aws_access_key_id=access_key_id,
                           aws_secret_access_key=secret_access_key)
 
-queue_url = client.get_queue_url(
-    QueueName='VoteQueue'
-)
+    queue_url = client.get_queue_url(
+        QueueName='VoteQueue'
+    )
 
-print(queue_url)
+    print(queue_url)
 
-sqs_response = client.send_message(
-    QueueUrl=queue_url,
-    MessageBody=vote.upper(),
-    DelaySeconds=0
-)
+    sqs_response = client.send_message(
+        QueueUrl=queue_url,
+        MessageBody=vote.upper(),
+        DelaySeconds=0
+    )
 
-print("Message sent")
-print("Response is", sqs_response)
+    print("Message sent")
+    print("Response is", sqs_response)
+
 else:
-    statement(s)
+    print("Incorrect Vote Type Submitted, Please Try Again!")
 
