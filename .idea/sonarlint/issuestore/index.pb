@@ -70,8 +70,6 @@ L
 playbooks/deleteSQSQueue.yml,f/9/f90bf4dc6c665c6a69e243a4ab918b2d1a1e1189
 G
 playbooks/deleteAll.yml,1/8/18cbad4debe8d97fffeb200a4a1d17fef2175f50
-J
-static-web-app/mapping.txt,4/e/4e8d8dca8203dbd7b52c281e835d5bfe630e7309
 G
 playbooks/createAll.yml,5/2/52d86a140444f64f1c26fd666587d09ff5eac7bb
 R
@@ -82,3 +80,5 @@ L
 playbooks/deleteSNSTopic.yml,0/4/048fa6a3cbd8a8a5a79924495c3278c922de6326
 P
  playbooks/publishMessageToSNS.py,5/c/5c1f39a7f6aebf1941c507edb2dcf824251e0852
+R
+"playbooks/addPermissionToLambda.py,2/f/2f4600d4ca0016c48ae7c93eddefaca36f9b7dca

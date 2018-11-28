@@ -10,7 +10,7 @@
     zip_file: '{{ item.zip_file }}'
     runtime: 'nodejs6.10'
     handler: '{{ item.handler }}'
-    role: '{{ lambda_dynamodb_role }}'
+    role: '{{ lambda_role }}'
   with_items:
     - name: '{{ receive_lambda_function }}'
       zip_file: '{{ zip_file_receive_function }}'

@@ -17,6 +17,7 @@ The following AWS serverless can be created and deleted via this project using a
 - SQS (Creates SQS Queue, Sets SQS lambda event trigger and ability to delete full setup.)
 - SQS lambda trigger testing script
 - SNS lambda trigger testing script
+- AWS SDK for Javascript for use with NodeJS 6.10 Lambda scripting.
 
 ## Requirements
 The Following things need to be done prior to using this project:
