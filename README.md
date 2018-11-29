@@ -34,6 +34,8 @@ In order to run the playbook as password is required per environment (qa, produc
 # Order of playbooks / scripts to run
 
 # Creation:
+createAll.yml (Combines the below scripts)
+
 1. creates3Bucket.yml
 2. createDynamodbTable.yml
 3. createLambdaFunction.yml
@@ -51,6 +53,8 @@ Command to run: python publishMessageToSNS.py
 - Sends Vote message to SNS topic to test lambda trigger and view vote update in web application.
 
 # Deletion:
+deleteAll.yml (Combines the below scripts)
+
 1. deleteS3Bucket.yml
 2. deleteDynamodbTable.yml
 3. deleteLambdaFunction.yml

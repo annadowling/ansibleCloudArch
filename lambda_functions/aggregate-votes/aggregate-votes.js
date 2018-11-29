@@ -120,7 +120,6 @@ exports.handler = function (event, context) {
             Key: 'refresh.js'
         };
         s3.deleteObject(params, function (err, data) {
-            console.log("Got here in delete");
             if (err) {
                 console.log("Check if you have sufficient permissions : " + err);
             }
