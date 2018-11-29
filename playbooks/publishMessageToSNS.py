@@ -23,8 +23,6 @@ print "you entered", vote
 key_data = vault.load(open('../group_vars/aws/vault.yml').read())
 secret_access_key = list(key_data.values())[0]
 access_key_id = list(key_data.values())[1]
-print access_key_id
-print secret_access_key
 
 if vote.upper() in ("RED", "GREEN", "BLUE"):
     client = boto3.client('sns', region_name='eu-west-1', aws_access_key_id=access_key_id,
